@@ -5,3 +5,41 @@ font-style: normal; */
 /* font-family: tenez, sans-serif;
 font-weight: 700;
 font-style: normal; */
+
+div{
+    border: solid black 1px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+body{
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #F8F8F8;
+    /* margin: 2% 5%; */
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.row1{
+    height: 24vh;
+}
+.row2{
+    height: 15vh;
+}
+.row3{
+    height: 23vh;
+}
+.row4{
+    height: 15vh;
+}
+.row5{
+    height: 23vh;
+}
