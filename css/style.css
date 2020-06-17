@@ -7,7 +7,7 @@ font-weight: 700;
 font-style: normal; */
 
 div{
-    border: solid black 1px;
+    /* border: solid black 1px; */
 }
 
 *{
@@ -20,13 +20,60 @@ body{
     font-family: nimbus-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-color: #F8F8F8;
-
-    /* margin: 2% 5%; */
+    /* background-color: #F8F8F8; */
 }
+
+/* -------------------------------- TEXT */
+
+h1, h2, h3, h4, h5, h6, p, a{
+    white-space: normal;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: tenez, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13.5em;
+    line-height: 80%;
+    letter-spacing: -.05em;
+    color: #000;
+    text-transform: uppercase;
+}
+h2{
+    font-family: tenez, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13.5em;
+    line-height: 80%;
+    color: #f8f8f800;
+    -webkit-text-stroke: 1px black;
+}
+h3{
+    font-family: tenez, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+    color: #000;
+    
+    padding-bottom: .5em;
+}
+p{
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.4em;
+    color: #000;
+    line-height: 160%;
+    letter-spacing: .02em;
+}
+
+/* -------------------------------- CONTAINERS */
 
 #wrapper{
     display: flex;
+    position: relative;
     flex-direction: column;
     white-space: nowrap;
     overflow-x: scroll;
@@ -58,22 +105,29 @@ body{
 
 /* -------------------------------- LANDING */
 
+.subtitle, .title{
+    padding-left: 4vw;
+}
 .subtitle{
     width: 100vw;
 }
 .title h1{
-    width: 125vw;
+    width: fit-content;
+    white-space: nowrap;
+    /* margin-top: -20px; */
 }
 
 /* -------------------------------- CONTENT */
 
 .row2-offset{
     padding-right: 100vw;
-    margin-right: 90px;
+    padding-right: 1440px;
+
+    /* margin-right: 90px; */
 }
 .row4-offset{
-    margin-left: 90px;
-    /* padding-left: 25vw; */
+    /* margin-left: 90px; */
+    padding-left: 20vw;
 }
 .content-container{
     display: flex;
@@ -89,4 +143,22 @@ body{
     /* min-width: 300px; */
     padding-left: 2vw;
     margin-right: 23vw;
+}
+
+/* -------------------------------- DECORATIVE */
+
+.bg-grid{
+    position: absolute;
+    top: -20%;
+    left: 0;
+    z-index: -1000;
+    width: 300vw;
+    height: 150vh;
+    overflow: hidden;
+
+        background: #f8f8f8;
+        background-image: linear-gradient(#eaeaea 1px, transparent 1px), 
+            linear-gradient(90deg,#eaeaea 1px, transparent 1px);
+        background-size: 330px 330px;
+    
 }
