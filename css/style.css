@@ -173,11 +173,11 @@ p{
 
 .bg-grid{
     position: absolute;
-    top: -23%;
+    /* top: -23%; */
     left: 0;
     z-index: -1000;
     width: 100%;;
-    height: 150vh;
+    /* height: 150vh; */
     overflow: hidden;
 
         background: #f8f8f8;
